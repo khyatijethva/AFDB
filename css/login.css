@@ -1,0 +1,232 @@
+.button:focus,
+input:focus,
+.form-control:focus,
+button:focus {
+    outline: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+section.login-section {
+    padding: 80px 0px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-section .row {
+    align-items: center;
+}
+.login-img {
+    display: flex;
+    align-items: center;
+}
+
+.login-img img {
+    min-width: 250px;
+    width: 100%;
+    max-width: 280px;
+}
+.login-img p {
+    margin-left: 12px;
+    padding-bottom: 12px;
+}
+
+.signup-form form h2 {
+    color: #333333;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+.signup-form form .form-group label {
+    color: #5B5B5B;
+    line-height: 1.2;
+}
+.login-btn {
+    background-color: #00A160;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    line-height: 1.15;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 1px;
+    border: 1px solid #00A160;
+    transition: all 0.3s ease-in-out;
+}
+.login-btn:hover{
+    background-color: transparent;
+    color: #00A160;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.signup-form form .form-control {
+    padding: 17px 25px 17px 55px;
+    height: auto;
+    border: 1px solid #B5B5B5;
+    border-radius: 8px;
+    color: #A7A7A7;
+    font-size: 16px;
+}
+.signup-form form .form-control::placeholder{
+    color: #A7A7A7;
+}
+.form-group i.fa {
+    position: absolute;
+    top: 47px;
+    color: #7B7B7B;
+    font-size: 22px;
+    left: 22px;
+}
+.form-forgot-check a {
+    font-weight: 500;
+    color: #0D6CFB;
+}
+.form-forgot-check {
+    text-align: right;
+}
+.form-forgot-check {
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+.signup-form {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+/* reset password css */
+.reset-form .note {
+    text-align: left;
+    color: #118744;
+    font-weight: 500;
+}
+.reset-form .form-recovery-check {
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+.reset-form .form-group .check i {
+    right: 20px;
+    left: auto;
+    font-size: 15px;
+    top: 53px;
+    color: #118744;
+}
+.signup-form form .form-control {
+    padding: 17px 40px 17px 55px;
+}
+
+
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .signup-form form h2 {
+        margin-bottom: 45px;
+    }
+    .form-group {
+        margin-bottom: 30px;
+    }
+    .form-forgot-check {
+        margin-bottom: 35px;
+    }
+    .signup-form form .form-control {
+        padding: 15px 25px 15px 55px;
+    }
+    .login-btn {
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 1299px){
+    h2 {
+        font-size: 32px;
+    }
+    .login-img img {
+        min-width: 150px;
+        max-width: 200px;
+    }
+    .signup-form form h2 {
+        margin-bottom: 35px;
+    }
+    .signup-form form .form-control {
+        padding: 13px 25px 13px 50px;
+    }
+    .form-group i.fa {
+        top: 45px;
+        font-size: 18px;
+        left: 20px;
+    }
+    .form-group {
+        margin-bottom: 25px;
+    }
+    .login-btn {
+        padding: 15px;
+    }
+    .reset-form .form-group .check i {
+        right: 15px;
+        top: 48px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .container {
+        max-width: 90%;
+    }
+    section.login-section {
+        padding: 40px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 26px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .signup-form.reset-form {
+        max-width: 100%;
+    }
+    .login-img {
+        justify-content: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .signup-form form h2 {
+        text-align: center;
+    }
+    .login-img img {
+        max-width: 150px;
+        margin-bottom: 5px;
+    }
+    .signup-form form h2 {
+        margin-bottom: 25px;
+    }
+    .signup-form form .form-control {
+        padding: 10px 20px 11px 45px;
+    }
+    .form-group i.fa {
+        top: 44px;
+        font-size: 16px;
+    }
+    .form-group {
+        margin-bottom: 16px;
+    }
+    .login-btn {
+        padding: 12px 15px;
+    }
+    .reset-form .form-group .check i {
+        right: 15px;
+        top: 45px;
+    }
+}

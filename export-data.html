@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>African Development Fund | Export data</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/all.css" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header class="site-header">
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <a href="./dashboard.html">
+                        <img src="images/Icon.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- nav right menu -->
+                <div class="nav-right">
+                    <!-- nav search -->
+                    <div class="header-search">
+                        <form class="search-form">
+                            <div class="form-control">
+                                <span class="btn searchicon"><i class="far fa-search"></i></span>
+                                <div class="searchdiv">
+                                    <input type="text" id="search-source" placeholder="Search for Events" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- navigation right bar -->
+                    <div class="right-menu">
+                        <span class="hemburger"><i class="fa fa-bars"></i></span>
+                        <div class="filters-menu">
+                            <a href="./export-data.html" class="btn btn-primary export mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14.932" height="14.878"
+                                    viewBox="0 0 14.932 14.878">
+                                    <g id="noun-export-1406983" transform="translate(-124.681 -56.359)">
+                                        <path id="Path_2000" data-name="Path 2000"
+                                            d="M250.052,57.083v-.127l-.036-.072-.036-.054-.09-.108h-.018l-.108-.09-.054-.036-.072-.036h-4.464a.723.723,0,0,0,0,1.446h2.422l-8.152,8.1a.729.729,0,0,0,1.03,1.03l8.152-8.152V61.4a.723.723,0,0,0,1.446,0V57.246a.721.721,0,0,0-.018-.163Z"
+                                            transform="translate(-110.657)" fill="#00a160" stroke="#fff"
+                                            stroke-width="0.4" />
+                                        <path id="Path_2001" data-name="Path 2001"
+                                            d="M127.05,153.95h7.374a2.169,2.169,0,0,0,2.169-2.169v-3.452a.723.723,0,0,0-1.446,0v3.452a.723.723,0,0,1-.723.723H127.05a.723.723,0,0,1-.723-.723v-7.374a.723.723,0,0,1,.723-.723H130.5a.723.723,0,0,0,0-1.446H127.05a2.169,2.169,0,0,0-2.169,2.169v7.374a2.169,2.169,0,0,0,2.169,2.169Z"
+                                            transform="translate(0 -82.913)" fill="#00a160" stroke="#fff"
+                                            stroke-width="0.4" />
+                                    </g>
+                                </svg>
+                                <span>Export Data</span>
+                            </a>
+                            <div class="dropdown mr-4">
+                                <a class="btn btn-primary filter" href="./dashboard.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14.687" height="14.688"
+                                        viewBox="0 0 14.687 14.688">
+                                        <g id="Iconly_Light-Outline_Filter-2" data-name="Iconly/Light-Outline/Filter-2"
+                                            transform="translate(-2 -2)">
+                                            <g id="Filter-2" transform="translate(2 2)">
+                                                <path id="Fill-1"
+                                                    d="M5.1,7.23c.014.012.026.023.039.037A4.424,4.424,0,0,1,6.4,10.374v3l1.684-.917a.418.418,0,0,0,.215-.37V10.365A4.415,4.415,0,0,1,9.549,7.27L13.193,3.4a1.348,1.348,0,0,0,.365-.927v-.7a.625.625,0,0,0-.613-.633H1.744a.625.625,0,0,0-.614.633v.7a1.344,1.344,0,0,0,.365.926Zm1.034,7.458a.868.868,0,0,1-.864-.87V10.374a3.3,3.3,0,0,0-.9-2.277.486.486,0,0,1-.05-.047L.673,4.169A2.473,2.473,0,0,1,0,2.468v-.7A1.756,1.756,0,0,1,1.744,0h11.2a1.756,1.756,0,0,1,1.743,1.763v.7a2.48,2.48,0,0,1-.671,1.7L10.366,8.051a3.3,3.3,0,0,0-.935,2.315v1.723a1.549,1.549,0,0,1-.8,1.362l-2.08,1.133a.863.863,0,0,1-.411.105Z"
+                                                    transform="translate(0 0)" fill="#00a160" fill-rule="evenodd" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span>Filters</span>
+                                </a>
+                            </div>
+                            <div class="dropdown user-profile mob-user">
+                                <button class="user-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="user-profile">
+                                        <img src="./images/user.png" alt="">
+                                        <div class="userdata">
+                                            <h6>Gilbert Rossman</h6>
+                                            <p>Admin</p>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#"><img src="./images/logout.svg" alt=""> Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle notification active" id="notification" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.422" height="21.463"
+                                    viewBox="0 0 19.422 21.463">
+                                    <g id="bell" transform="translate(-1486.518 -55.122)">
+                                        <path id="Path_140" data-name="Path 140"
+                                            d="M219.79,141.378a3.154,3.154,0,0,1-6.264,0h-4.285a2.041,2.041,0,1,1,0-4.081.187.187,0,0,0,.185-.186v-4.452a7.237,7.237,0,0,1,5.009-6.886v-.349a2.226,2.226,0,1,1,4.453,0v.349a7.238,7.238,0,0,1,5.009,6.886v4.452a.184.184,0,0,0,.185.186,2.041,2.041,0,1,1,0,4.081Zm-1.125,0h-4.014a2.041,2.041,0,0,0,4.014,0Zm-3.538-14.648a6.123,6.123,0,0,0-4.591,5.929v4.452a1.3,1.3,0,0,1-1.3,1.3.928.928,0,1,0,0,1.855h14.834a.928.928,0,1,0,0-1.855,1.3,1.3,0,0,1-1.3-1.3v-4.452a6.124,6.124,0,0,0-4.591-5.929l-.418-.107v-1.2a1.113,1.113,0,1,0-2.226,0v1.2Z"
+                                            transform="translate(1279.571 -67.825)" fill="#363636" stroke="#363636"
+                                            stroke-width="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <div class="notification-menu dropdown-menu" aria-labelledby="filter">
+                                <div class="dropdown-header">
+                                    <h4>Notification</h4>
+                                </div>
+                                <div class="notification-content">
+                                    <div class="notification-box">
+                                        <div class="notification-img">
+                                            <img src="images/notification-img.png">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h6>Alex Johns edited Global Sports Week event</h6>
+                                            <div class="notification-release">
+                                                <span class="date">Feb 05 - Feb 06</span>
+                                                <span class="time">2h ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-box">
+                                        <div class="notification-img">
+                                            <img src="images/notification-img.png">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h6>Alex Johns edited Global Sports Week event</h6>
+                                            <div class="notification-release">
+                                                <span class="date">Feb 05 - Feb 06</span>
+                                                <span class="time">2h ago</span>
+                                            </div>
+                                            <div class="notification-btn">
+                                                <button type="button" class="btn btn-filled mr-2" data-toggle="modal"
+                                                    data-target="#approve_notification">Approve</button>
+                                                <button type="button" class="btn btn-rejected" data-toggle="modal"
+                                                    data-target="#reject_notify">Reject</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-box">
+                                        <div class="notification-img">
+                                            <img src="images/notification-img.png">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h6>Alex Johns edited Global Sports Week event</h6>
+                                            <div class="notification-release">
+                                                <span class="date">Feb 05 - Feb 06</span>
+                                                <span class="time">2h ago</span>
+                                            </div>
+                                            <div class="notification-btn">
+                                                <button type="button" class="btn btn-filled mr-2" data-toggle="modal"
+                                                    data-target="#approve_notification">Approve</button>
+                                                <button type="button" class="btn btn-rejected" data-toggle="modal"
+                                                    data-target="#reject_notify">Reject</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-box">
+                                        <div class="notification-img">
+                                            <img src="images/notification-img.png">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h6>Alex Johns edited Global Sports Week event</h6>
+                                            <div class="notification-release">
+                                                <span class="date">Feb 05 - Feb 06</span>
+                                                <span class="time">2h ago</span>
+                                            </div>
+                                            <div class="notification-btn">
+                                                <button type="button" class="btn btn-filled mr-2" data-toggle="modal"
+                                                    data-target="#approve_notification">Approve</button>
+                                                <button type="button" class="btn btn-rejected" data-toggle="modal"
+                                                    data-target="#reject_notify">Reject</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown user-profile desktop-user">
+                            <button class="user-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="user-profile">
+                                    <img src="./images/user.png" alt="">
+                                    <div class="userdata">
+                                        <h6>Gilbert Rossman</h6>
+                                        <p>Admin</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><img src="./images/logout.svg" alt=""> Log Out</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <div class="site-wrapper">
+            <section class="events-section">
+                <div class="container">
+                    <div class="event-header">
+                        <a href="#">Filtered events data </a>
+                        <button href="#" class="btn btn-filled">Download Data</button>
+                    </div>
+                    <div class="event-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Sr No.</th>
+                                    <th>Event Name</th>
+                                    <th>Submitted date</th>
+                                    <th>Department</th>
+                                    <th>Submitted by </th>
+                                    <th>Start date</th>
+                                    <th>End date</th>
+                                    <th>Location</th>
+                                    <th>Event Format</th>
+                                    <th>Event Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Winter Olympic Games</td>
+                                    <td class="table-date">22 Oct, 2021</td>
+                                    <td>PSEG</td>
+                                    <td>Alex Johns</td>
+                                    <td class="table-date">04 Feb, 2022</td>
+                                    <td class="table-date">20 Feb, 2022</td>
+                                    <td class="table-location">Beijing</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="approved">Approved</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>35th ordinary Session of the AU Assembly </td>
+                                    <td class="table-date">25 Oct, 2021</td>
+                                    <td>PCER</td>
+                                    <td>Ronnie Palmer</td>
+                                    <td class="table-date">05 Feb, 2022</td>
+                                    <td class="table-date">05 Feb, 2022</td>
+                                    <td class="table-location">Addis Ababa</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="rejected">Rejected</span></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Africa Digital Financial Inclusion Facility..</td>
+                                    <td class="table-date">20 Oct, 2021</td>
+                                    <td>FIRM/FIVP</td>
+                                    <td>Alex Johns</td>
+                                    <td class="table-date">21 Feb, 2022</td>
+                                    <td class="table-date">22 Feb, 2022</td>
+                                    <td class="table-location">Abidjan</td>
+                                    <td>Virtual</td>
+                                    <td class="status"><span class="in-review">In Review</span></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>6th European Union-African Union Summit</td>
+                                    <td class="table-date">21 Oct, 2021</td>
+                                    <td>PSEG</td>
+                                    <td>Mike Matthews</td>
+                                    <td class="table-date">17 Feb, 2022</td>
+                                    <td class="table-date">18 Mar, 2022</td>
+                                    <td class="table-location">Brussels</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="rejected">Rejected</span></td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>High-Level Meeting of the Champions..</td>
+                                    <td class="table-date">22 Oct, 2021</td>
+                                    <td>FIRM/FIVP</td>
+                                    <td>Louis Andrews</td>
+                                    <td class="table-date">27 Feb, 2022</td>
+                                    <td class="table-date">03 Mar, 2022</td>
+                                    <td class="table-location"> Lahti, Finland</td>
+                                    <td>Physical</td>
+                                    <td class="status"><span class="rejected">Rejected</span></td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>AfDB Board Retreat</td>
+                                    <td class="table-date">19 Oct, 2021</td>
+                                    <td>BDEV/BDIR</td>
+                                    <td>Patrick Hudson</td>
+                                    <td class="table-date">27 Feb, 2022</td>
+                                    <td class="table-date">03 Mar, 2022</td>
+                                    <td class="table-location"> Dubai, UAE</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="rejected">Rejected</span></td>
+                                </tr>
+                                <tr>
+                                    <td>07</td>
+                                    <td>Dubai Expo Spotlight on Africa - Sahel</td>
+                                    <td class="table-date">22 Oct, 2021</td>
+                                    <td>PSEG</td>
+                                    <td>Alex Johns</td>
+                                    <td class="table-date">27 Feb, 2022</td>
+                                    <td class="table-date">03 Mar, 2022</td>
+                                    <td class="table-location">Abidjan</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="rejected">Rejected</span></td>
+                                </tr>
+                                <tr>
+                                    <td>08</td>
+                                    <td>Change Agents' Monthly Meeting</td>
+                                    <td class="table-date">20 Oct, 2021</td>
+                                    <td>PCSC</td>
+                                    <td>Marie Stewart</td>
+                                    <td class="table-date">22 Feb, 2022</td>
+                                    <td class="table-date">22 Feb, 2022</td>
+                                    <td class="table-location">Abidjan</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="approved">Approved</span></td>
+                                </tr>
+                                <tr>
+                                    <td>09</td>
+                                    <td>AIF - Partners meeting</td>
+                                    <td class="table-date">26 Oct, 2021</td>
+                                    <td>PCER</td>
+                                    <td>Alex Johns</td>
+                                    <td class="table-date">23 Feb, 2022</td>
+                                    <td class="table-date">24 Feb, 2022</td>
+                                    <td class="table-location">Abidjan</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="in-review">In Review</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>PDB/SME event at UNFSS Agri Food..</td>
+                                    <td class="table-date">28 Oct, 2021</td>
+                                    <td>BDEV/BDIR</td>
+                                    <td>Alan Roberts</td>
+                                    <td class="table-date">28 Feb, 2022</td>
+                                    <td class="table-date">28 Feb, 2022</td>
+                                    <td class="table-location">Abidjan</td>
+                                    <td>Virtual</td>
+                                    <td class="status"><span class="in-review">In Review</span></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>AFFM Governing Council </td>
+                                    <td>11 Oct, 2021</td>
+                                    <td>PSEG</td>
+                                    <td>Alex Johns</td>
+                                    <td>27 Feb, 2022</td>
+                                    <td>03 Mar, 2022</td>
+                                    <td class="table-location">Abidjan</td>
+                                    <td>Ontime</td>
+                                    <td class="status"><span class="approved">Approved</span></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Dissemination of the DAM</td>
+                                    <td class="table-date">12 Oct, 2021</td>
+                                    <td>BDEV/BDIR</td>
+                                    <td>Alex Johns</td>
+                                    <td class="table-date">28 Feb, 2022</td>
+                                    <td class="table-date">03 Mar, 2022</td>
+                                    <td class="table-location">Dubai</td>
+                                    <td>Virtual</td>
+                                    <td class="status"><span class="approved">Approved</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Approve notification Modal -->
+    <div class="modal fade" id="approve_notification" tabindex="-1" role="dialog"
+        aria-labelledby="approve_notificationLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content eventdetail">
+                <div class="successbefore">
+                    <div class="modalheader">
+                        <span class="badge" style="background-color: #159CF5;">Important Event</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="event-create approve_event">
+                            <div class="event-name">
+                                <h3 class="name">Middle East and North Africa Climate Week </h3>
+                            </div>
+                            <ul class="event-time">
+                                <li><span class="label">Start Date</span><span class="value">27 Feb 2022</span></li>
+                                <li><span class="label">End Date</span><span class="value">03 Mar 2022</span></li>
+                                <li class="location"><img src="./images/open-map-marker.svg">Brussels</li>
+                            </ul>
+                            <div class="description">
+                                <p>Ultrices cum sociosqu fermentum donec at dapibus vestibulum sit non vestibulum
+                                    accumsan hendrerit eleifend ut varius adipiscing sodales auctor nisi inceptos fusce
+                                    phasellus egestas...</p>
+                            </div>
+                            <ul class="department-format">
+                                <li><span class="label">Owner Department </span><span class="value">PSEG</span></li>
+                                <li><span class="label">Event Format</span><span class="value">Onsite</span></li>
+                            </ul>
+                            <div class="btns-aprv">
+                                <button class="btn btn-secondary approve">Approve</button>
+                                <button class="btn btn-secondary warning">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary approveview-more" data-toggle="modal"
+                        data-target="#event-detail"><img src="./images/feather-arrow-up-right.svg"></button>
+                </div>
+
+                <div class="approve-success modalnotify">
+                    <div class="header-close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <h3>2021 One Bank DAM - Information session event has been <span
+                            style="color: #00A160;">Approved</span></h3>
+                </div>
+
+                <div class="approve-rejected modalnotify">
+                    <div class="header-close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <h3>2021 One Bank DAM - Information session event has been <span
+                            style="color: #EB1515;">rejected</span></h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Reject notification Modal -->
+    <div class="modal fade" id="reject_notify" tabindex="-1" role="dialog" aria-labelledby="reject_notifyLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <div class="rejectbefore">
+                    <div class="head">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="reject-reason">
+                        <h3>Please select reason</h3>
+                        <form action="">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">Wrong Date
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">Missing Information
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">Wrong Location
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">Conflicting Dates
+                                </label>
+                            </div>
+                            <div class="submit">
+                                <button type="button" class="btn btn-secondary rejectsubmit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="rejectafter modalnotify">
+                    <div class="header-close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <h3>2021 One Bank DAM - Information session event has been <span
+                            style="color: #EB1515;">rejected</span></h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.dateline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
